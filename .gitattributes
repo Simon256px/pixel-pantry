@@ -1,0 +1,13 @@
+# Les images sont binaires : pas de conversion de fins de ligne, pas de diff textuel.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.avif binary
+*.ico  binary
+
+# Le SVG est du texte, mais on ne veut pas le voir dans les diffs de PR.
+*.svg text eol=lf -diff
+
+*.md   text eol=lf
